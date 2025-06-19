@@ -26,7 +26,7 @@ resources:
               - "${var.catalog}"
           job_cluster_key: ds3_v2_sn
           libraries: 
-            - whl: ..\dist\*whl          
+            - whl: ../dist/*whl          
         - task_key: 03_gold_citibike_daily_ride_summary
           depends_on:
             - task_key: 02_silver_citibike
